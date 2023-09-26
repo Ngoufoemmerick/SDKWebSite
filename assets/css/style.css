@@ -229,12 +229,29 @@ div.hero-second .circle{
     -ms-transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
     -o-transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
     transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
-    line-height: 50px;
+    line-height: 60px;
     background: none !important;
     z-index: 4;
 }
 
-.btn-slider2 i {
+.btn-slider3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding-left: 94px;
+    -webkit-transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -khtml-transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -moz-transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -ms-transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -o-transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
+    transition: 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
+    line-height: 32px;
+    background: none !important;
+    z-index: 4;
+}
+
+.btn-slider2 i{
     font-size: 22px;
     position: absolute;
     left: 62px;
@@ -255,6 +272,30 @@ div.hero-second .circle{
     transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
     z-index: 3;
 }
+
+.btn-slider3 i{
+    font-size: 18px;
+    position: absolute;
+    left: 62px;
+    top: 35%;
+    color: white;
+    -webkit-transform: translate(0, -50%);
+    -khtml-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    display: inline-flex;
+    -webkit-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -khtml-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -moz-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -ms-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -o-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    z-index: 3;
+}
+
+
 
 .btn-slider2:before {
     content: "";
@@ -282,16 +323,42 @@ div.hero-second .circle{
     transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
 }
 
-.btn-slider2:hover:before{
+.btn-slider3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 42px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    border: double 2px transparent;
+    background-image: linear-gradient(#f5f5f5, #f5f5f5), radial-gradient(circle at top left, #208EBA, #838687);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    z-index: 1;
+    -webkit-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -khtml-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -moz-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -ms-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    -o-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+    transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+}
+
+.btn-slider2:hover:before, .btn-slider3:hover:before{
     width: 200px;
     z-index: -1;
 }
 
-.btn-slider2:hover i{
+.btn-slider2:hover i, .btn-slider3:hover i{
     left: 185px;
 }
 
-.btn-slider2:hover {
+.btn-slider2:hover, .btn-slider3:hover {
     z-index: 4;
     padding-left: 64px;
 }
@@ -369,6 +436,160 @@ p.after-title{
     padding: 10px 30px;
     margin: 0 auto;
 }
+
+/************* Who we are Section **********************/
+section.who_we_are{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 0 20px;
+    margin: 50px auto;
+    align-items: center;
+}
+
+section.who_we_are .about_description{
+    width: 100%;
+    max-width: 50%;
+    margin: 15px auto;
+}
+
+section.who_we_are .about_description p{
+    color: rgba(0, 0, 0, 0.54);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.08px;
+}
+
+section.who_we_are div.large{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+section.who_we_are div.large .circle_btn{
+    width: 300px;
+
+}
+
+section.who_we_are div.large .circle_btn a div p, section.who_we_are div.large .circle_btn a div i{
+    color: #454545;
+    size: 12px;
+}
+
+/*************** End Who we are section ***********************/
+
+/************* Why choose us Section **********************/
+section.why_choose_us{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 0 20px;
+    margin: 50px auto;
+    align-items: center;
+}
+
+div.why_choose_us-content{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 50px;
+
+}
+
+div.why_choose_us-content div.why_choose_us-block{
+    position: absolute;
+    width: 25%;
+    height: 24vh;
+    overflow: hidden;
+    background-image: url('../images/losange.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s ease-in 0s;
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+}
+
+
+div.why_choose_us-content div.why_choose_us-block div.bloc-content{
+    width: 100%;
+    text-align: center;
+    padding: 40px 44px 10px 44px;
+}
+
+div.why_choose_us-content div.why_choose_us-block div.bloc-content p::-webkit-scrollbar {
+    display: none;
+  }
+
+div.why_choose_us-content div.why_choose_us-block div.bloc-content p{
+    width: 100%;
+    height: 100px;
+    color: rgba(0, 0, 0, 0.54);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.065px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+div.why_choose_us-content div.why_choose_us-block div.bloc-content h4{
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.07px;
+    overflow: hidden;
+}
+
+div.why_choose_us-content div.why_choose_us-block:hover{
+    
+    transition: all 0.5s ease-in 0s;
+    transform : translateY(-20px) !important;
+}
+
+div.why_choose_us-content div:nth-child(1){
+    top: calc(50% - 12vh);
+    left: 5%;
+}
+
+div.why_choose_us-content div:nth-child(2){
+    top: 10px;
+    left: 25%;
+}
+
+div.why_choose_us-content div:nth-child(3){
+    top: calc(70vh - 24vh);
+    left: 25%;
+}
+
+div.why_choose_us-content div:nth-child(4){
+    top: calc(50% - 12vh);
+    left: 45%;
+}
+
+div.why_choose_us-content div:nth-child(5){
+    top: 10px;
+    right: 5%;
+}
+
+div.why_choose_us-content div:nth-child(6){
+    top: calc(70vh - 24vh);
+    right: 5%;
+}
+
+
+/*************** End Why choose us section ***********************/
+
 
 /************* Services Section **********************/
 section.services{
@@ -459,11 +680,19 @@ section.services{
 
 .aside{
     border: 0.005rem solid #e2e2e2;
-    height: auto;
+    height: 75vh;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-left: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+.aside::-webkit-scrollbar {
+    display: none;
+  }
 
 h2.aside-title{
     font-weight: 600;
@@ -1066,9 +1295,47 @@ footer{
     }
 
     /***************** Service block css *****************/
+    div.why_choose_us-content div.why_choose_us-block div.bloc-content{
+        padding: 30px 30px 10px 30px;
+    }
 
     .services-content div.service-block{
         width: 24%;
+    }
+
+    div.why_choose_us-content div.why_choose_us-block{
+        width: 40%;
+    }
+
+
+    div.why_choose_us-content div:nth-child(1){
+        top: 10px;
+        left: 5%;
+    }
+    
+    div.why_choose_us-content div:nth-child(2){
+        top: 10px;
+        left: calc(100% - 40%);
+    }
+    
+    div.why_choose_us-content div:nth-child(3){
+        top: calc(70vh - 20vh);
+        left: 5%;
+    }
+    
+    div.why_choose_us-content div:nth-child(4){
+        top: calc(70vh - 20vh);
+        left: calc(100% - 40%);
+    }
+    
+    div.why_choose_us-content div:nth-child(5){
+        top: calc(70vh - 45vh);
+        left: 5%;
+    }
+    
+    div.why_choose_us-content div:nth-child(6){
+        top: calc(70vh - 45vh);
+        left: calc(100% - 40%);
     }
 
 
@@ -1132,6 +1399,45 @@ footer{
     .footer .footer-first div{
         text-align: center;
         align-items: center;
+    }
+
+    div.why_choose_us-content div.why_choose_us-block div.bloc-content{
+        padding: 30px 20px 10px 20px;
+    }
+
+    div.why_choose_us-content div.why_choose_us-block{
+        width: 50%;
+    }
+
+
+    div.why_choose_us-content div:nth-child(1){
+        top: 10px;
+        left: 1%;
+    }
+    
+    div.why_choose_us-content div:nth-child(2){
+        top: 10px;
+        left: calc(100% - 45%);
+    }
+    
+    div.why_choose_us-content div:nth-child(3){
+        top: calc(70vh - 20vh);
+        left: 1%;
+    }
+    
+    div.why_choose_us-content div:nth-child(4){
+        top: calc(70vh - 20vh);
+        left: calc(100% - 45%);
+    }
+    
+    div.why_choose_us-content div:nth-child(5){
+        top: calc(70vh - 45vh);
+        left: 1%;
+    }
+    
+    div.why_choose_us-content div:nth-child(6){
+        top: calc(70vh - 45vh);
+        left: calc(100% - 45%);
     }
 
     /***************** Service block css *****************/
